@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Legacy on Wheels</title>
+</head>
+
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo (2).png" alt="Logo" style="width: 100px; height: auto;">
+            <h5>Legacy on wheels</h5>
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Listing car">Listing car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brand">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login / Register</a></li>
+
+                    <div class="actions d-flex gap-3">
+                      <a class="btn" href="#"><i class="fas fa-car"></i> Add listing</a>
+                    </div>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+  
+    <section class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/card1.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption position-absolute top-50 start-0 translate-middle-y text-white" style="padding-right: 800px;">
+                  <h1>BMW M5 competition</h1>
+                  <p style="margin-left: 15%; color: #FF7101;"> high-performance sedan that combines motor sport feeling with everyday</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel 2.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption position-absolute top-50 start-0 translate-middle-y text-white" style="padding-right: 800px;">
+                  <h1>Mustang Mach 1</h1>
+                  <p style="margin-left: 8%; color: #FF7101;"> The term "Mach 1" is equal to the "speed of sound"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel 3.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption position-absolute top-50 start-0 translate-middle-y text-white" style="padding-right: 800px;">
+                  <h1>Corvette c7</h1>
+                  <p style="margin-left: 32%; color: #FF7101;">  R is a grand tourer racing car built by Pratt Miller and Chevrolet.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      <div class="search-bar">
+        <select class="form-select">
+          <option>Make</option>
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Ford</option>
+          <option>Isuzu</option>
+        </select>
+        <select class="form-select">
+          <option>Model</option>
+          <option>A4</option>
+          <option>Almera</option>
+          <option>Bellett</option>
+          <option>C-Class</option>
+          <option>camry</option>
+        </select>
+        <select class="form-select">
+          <option>Door</option>
+          <option>2</option>
+          <option>4</option>
+        </select>
+        <select class="form-select">
+          <option>Body</option>
+          <option>Convertible</option>
+          <option>Coupe</option>
+          <option>Crossover</option>
+          <option>Hatchback</option>
+          <option>Mini Van</option>
+        </select>
+        <button class="btn">Find cars</button>
+      </div>
+    </section>
+
+    <div id="Listing car" class="container" style="width: auto;">
+        <h1>Used Cars By Body Type</h1>
+        <div class="my-4">
+
+          <ul class="nav nav-tabs" id="carTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="suv-tab" data-bs-toggle="tab" href="#suv" role="tab" aria-controls="suv" aria-selected="true">SUV</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="hatchback-tab" data-bs-toggle="tab" href="#hatchback" role="tab" aria-controls="hatchback" aria-selected="false">Hatchback</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="sedan-tab" data-bs-toggle="tab" href="#sedan" role="tab" aria-controls="sedan" aria-selected="false">Sedan</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="muv-tab" data-bs-toggle="tab" href="#muv" role="tab" aria-controls="muv" aria-selected="false">MUV</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="luxury-tab" data-bs-toggle="tab" href="#luxury" role="tab" aria-controls="luxury" aria-selected="false">Luxury</a>
+            </li>
+          </ul>
+      
+
+          <div class="tab-content" id="carTabsContent">
+            <div class="tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="suv-tab">
+              <div class="container d-flex" style="gap: 15px; flex-wrap: wrap;">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv1.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+              
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv2.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+              
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv3.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv4.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv5.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv6.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv7.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv8.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv9.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/Cars/Suv/suv10.jpg" alt="SUV Car">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-category">SUV</div>
+                      <h2 class="card-title">2021 Honda CR-V</h2>
+                      <div class="card-specs">
+                        <div class="spec">
+                          <i class="fas fa-road"></i> 15,000 kms
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-gas-pump"></i> Petrol
+                        </div>
+                        <div class="spec">
+                          <i class="fas fa-cogs"></i> Automatic
+                        </div>
+                      </div>
+                      <div class="card-price">$40,000</div>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+            <div class="tab-pane fade" id="hatchback" role="tabpanel" aria-labelledby="hatchback-tab">
+              <div class="tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="suv-tab">
+                <div class="container d-flex" style="gap: 15px; flex-wrap: wrap;">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback1.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback2.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback3.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback4.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback5.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback6.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback7.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback8.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/hatchback9.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/Hatchback/10.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sedan" role="tabpanel" aria-labelledby="sedan-tab">
+              <div class="tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="suv-tab">
+                <div class="container d-flex" style="gap: 15px; flex-wrap: wrap;">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan5.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan2.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan3.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+
+                       <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan4.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+
+                       <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan1.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>     
+                      
+                       <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan6.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan7.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan8.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan9.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/sedan/sedan10.jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="muv" role="tabpanel" aria-labelledby="muv-tab">
+              <div class="tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="suv-tab">
+                <div class="container d-flex" style="gap: 15px; flex-wrap: wrap;">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (1).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (2).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>    
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (3).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (4).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>    
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (5).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>   
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (6).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (7).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>   
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (8).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div>  
+                      
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (10).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/Cars/MUV/muv1 (1).jpg" alt="SUV Car">
+                        </div>
+                        <div class="card-content">
+                          <div class="card-category">SUV</div>
+                          <h2 class="card-title">2021 Honda CR-V</h2>
+                          <div class="card-specs">
+                            <div class="spec">
+                              <i class="fas fa-road"></i> 15,000 kms
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-gas-pump"></i> Petrol
+                            </div>
+                            <div class="spec">
+                              <i class="fas fa-cogs"></i> Automatic
+                            </div>
+                          </div>
+                          <div class="card-price">$40,000</div>
+                        </div>
+                      </div> 
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="luxury" role="tabpanel" aria-labelledby="luxury-tab">
+              <div class="tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="suv-tab">
+                <div class="container d-flex" style="gap: 15px; flex-wrap: wrap;">
+
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="img/Cars/Luxary/Luzary1.jpg" alt="SUV Car">
+                          </div>
+                          <div class="card-content">
+                            <div class="card-category">SUV</div>
+                            <h2 class="card-title">2021 Honda CR-V</h2>
+                            <div class="card-specs">
+                              <div class="spec">
+                                <i class="fas fa-road"></i> 15,000 kms
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-gas-pump"></i> Petrol
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-cogs"></i> Automatic
+                              </div>
+                            </div>
+                            <div class="card-price">$40,000</div>
+                          </div>
+                        </div> 
+                    
+
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="img/Cars/Luxary/luxary2.jpg" alt="SUV Car">
+                          </div>
+                          <div class="card-content">
+                            <div class="card-category">SUV</div>
+                            <h2 class="card-title">2021 Honda CR-V</h2>
+                            <div class="card-specs">
+                              <div class="spec">
+                                <i class="fas fa-road"></i> 15,000 kms
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-gas-pump"></i> Petrol
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-cogs"></i> Automatic
+                              </div>
+                            </div>
+                            <div class="card-price">$40,000</div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary3.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary4.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary5.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+                                                  
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="img/Cars/Luxary/luxary6.jpg" alt="SUV Car">
+                          </div>
+                          <div class="card-content">
+                            <div class="card-category">SUV</div>
+                            <h2 class="card-title">2021 Honda CR-V</h2>
+                            <div class="card-specs">
+                              <div class="spec">
+                                <i class="fas fa-road"></i> 15,000 kms
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-gas-pump"></i> Petrol
+                              </div>
+                              <div class="spec">
+                                <i class="fas fa-cogs"></i> Automatic
+                              </div>
+                            </div>
+                            <div class="card-price">$40,000</div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary7.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary8.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/luxary9.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="img/Cars/Luxary/simion-daniel-M_wbM0jl1gQ-unsplash.jpg" alt="SUV Car">
+                            </div>
+                            <div class="card-content">
+                              <div class="card-category">SUV</div>
+                              <h2 class="card-title">2021 Honda CR-V</h2>
+                              <div class="card-specs">
+                                <div class="spec">
+                                  <i class="fas fa-road"></i> 15,000 kms
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-gas-pump"></i> Petrol
+                                </div>
+                                <div class="spec">
+                                  <i class="fas fa-cogs"></i> Automatic
+                                </div>
+                              </div>
+                              <div class="card-price">$40,000</div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="brand" class="brand-container py-4">
+        <div class="title">
+          What would you like to find?
+        </div>
+        <div class="view-all">
+          <a href="#">
+            View all
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="d-flex overflow-auto flex-nowrap" style="gap: 15px;">
+          <!-- Brand Cards -->
+          <div class="brand-card">
+            <img alt="Land Rover logo" src="img/Brands/Acura.png" / width="200px">
+            <div class="brand-name">Acura</div>
+            <div class="brand-count">100+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Kia logo" src="img/Brands/Bmw.png" />
+            <div class="brand-name">BMW</div>
+            <div class="brand-count">80+ Car</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Toyota logo" src="img/Brands/Brabus.png" />
+            <div class="brand-name">Brabus</div>
+            <div class="brand-count">20+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Jeep logo" src="img/Brands/Cadillac.png" />
+            <div class="brand-name">Cadillac</div>
+            <div class="brand-count">271+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Nissan logo" src="img/Brands/Citroen.png" / style="padding-top: 30%;">
+            <div class="brand-name">Citroen</div>
+            <div class="brand-count">120+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Datsun.png" />
+            <div class="brand-name">Datsun</div>
+            <div class="brand-count">200+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/dodge.png" / style="padding-top: 40%;">
+            <div class="brand-name">Dodge</div>
+            <div class="brand-count">50+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Ford.png" style="padding-top: 25% ;"/>
+            <div class="brand-name">Ford</div>
+            <div class="brand-count">200+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/GMC.png" style="padding-top: 30%;"/>
+            <div class="brand-name">GMC</div>
+            <div class="brand-count">180+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Hyndai.png" style="padding-top: 38%;"/>
+            <div class="brand-name">Hyndai</div>
+            <div class="brand-count">500+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Isuzu.png" / style="padding-top: 60%;">
+            <div class="brand-name">Isuzu</div>
+            <div class="brand-count">271 Car</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Jaguar.png" / style="padding-top: 12%;">
+            <div class="brand-name">Jaguar</div>
+            <div class="brand-count">278+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Jeep.png" / style="padding-top: 40%;">
+            <div class="brand-name">Jeep</div>
+            <div class="brand-count">100+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Kia.png" / style="padding-top: 35%;">
+            <div class="brand-name">Kia</div>
+            <div class="brand-count">300+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Mazda.png" />
+            <div class="brand-name">Mazda</div>
+            <div class="brand-count">50+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/MG.png" />
+            <div class="brand-name">MG</div>
+            <div class="brand-count">277+</div>
+          </div>
+          <div class="brand-card">
+            <img alt="Ford logo" src="img/Brands/Tesla.png" />
+            <div class="brand-name">Tesla</div>
+            <div class="brand-count">60+</div>
+          </div>
+        </div>
+      </div>
+       
+      <div id="parallax">
+        <div class="container">
+            <div class="calculator">
+                <h1>Auto Loan Calculator</h1>
+                <p>Use our calculator to estimate your monthly car payments.</p>
+                <label for="total-price">Total Price</label>
+                <input type="text" id="total-price" placeholder="$">
+                <div class="terms">
+                    <div>
+                        <label for="down-payment">Down payment</label>
+                        <input type="text" id="down-payment" placeholder="0%">
+                    </div>
+                    <div>
+                        <label for="terms">Terms</label>
+                        <select id="terms">
+                            <option>Monthly</option>
+                            <option>Yearly</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="terms">
+                    <div>
+                        <label for="interest-rate">Interest rate</label>
+                        <input type="text" id="interest-rate" placeholder="0%">
+                    </div>
+                    <div>
+                        <label for="loan-terms">Terms</label>
+                        <select id="loan-terms">
+                            <option>1 months</option>
+                            <option>3 months</option>
+                            <option>6 months</option>
+                            <option>12 months</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result">
+                    <div>Down payment amount : <span>---/-</span></div>
+                    <div>Amount financed : <span>---/-</span></div>
+                    <div>Monthly payment : <span class="highlight">---/-</span></div>
+                </div>
+                <button>Apply for a loan</button>
+            </div>
+            <a href="#" class="scroll-up">
+                <i class="fas fa-arrow-up"></i>
+              </a>
+        </div>
+      </div>
+  
+
+      <div id="service" class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+          <h1 class="text-3xl font-bold mb-4">
+            Find your dream car easily and quickly
+          </h1>
+          <p class="text-gray-600">
+            Browse thousands of new and used cars from all reputable brands on the market.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="service-card">
+            <img alt="Icon of a car with a magnifying glass" class="service-icon" src="https://storage.googleapis.com/a1aa/image/xhuKn7DxIELMMpi5Wxtfmu0FxSbcYfwnuXyS8fMNdLDd85EoA.jpg"/>
+            <h2 class="service-title">
+              Browse inventory
+            </h2>
+            <p class="service-description">
+              Find the ideal car for you and browse our affordable inventory.
+            </p>
+            <a class="service-link" href="#">
+              Search inventory →
+            </a>
+          </div>
+          <div class="service-card">
+            <img alt="Icon of a car with a dollar sign" class="service-icon" src="https://storage.googleapis.com/a1aa/image/2f8vGO4wp1RmLSnhWgKCVkBRJxJJu0SQf84uqTs5tr7Pe5EoA.jpg"/>
+            <h2 class="service-title">
+              Get An Offer
+            </h2>
+            <p class="service-description">
+              What's your car worth? Get the best value for your vehicle.
+            </p>
+            <a class="service-link" href="#">
+              Get trade-in Value →
+            </a>
+          </div>
+          <div class="service-card">
+            <img alt="Icon of a car with a hand" class="service-icon" src="https://storage.googleapis.com/a1aa/image/fVyilEBnq9U7BKB87s71ExHLeJqcJMt6EvZA3mhl40dRe5EoA.jpg"/>
+            <h2 class="service-title">
+              Apply For Financing
+            </h2>
+            <p class="service-description">
+              Fill out our credit approval form for your next used vehicle loan.
+            </p>
+            <a class="service-link" href="#">
+              Apply Now <br>→
+            </a>
+          </div>
+          <div class="service-card">
+            <img alt="Icon of tools" class="service-icon" src="https://storage.googleapis.com/a1aa/image/ZoN7bhfw3XXTQCyf0zDBCIkdSSAPalvKFOO6Evdvf2in85EoA.jpg"/>
+            <h2 class="service-title">
+              Expert Service
+            </h2>
+            <p class="service-description">
+              Expert technicians will keep your vehicle in top running condition.
+            </p>
+            <a class="service-link" href="#">
+              Schedule Service →
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container my-4">
+        <h3 class="mb-3">What would you like to find?</h3>
+        <div class="d-flex overflow-auto flex-nowrap" style="gap: 15px;">
+
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/card4.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/card3.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/card1.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/car3.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/car2.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/Cars/Luxary/luxary2.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+
+          <div class="brand card" style="min-width: 300px;">
+            <div class="card-image">
+              <img src="img/card4.jpg" class="card-img-top" alt="SUV Car">
+            </div>
+            <div class="card-body">
+              <div class="card-category text-muted">SUV</div>
+              <h5 class="card-title">2021 Honda CR-V</h5>
+              <div class="card-specs">
+                <p class="spec mb-1"><i class="fas fa-road"></i> 15,000 kms</p>
+                <p class="spec mb-1"><i class="fas fa-gas-pump"></i> Petrol</p>
+                <p class="spec mb-1"><i class="fas fa-cogs"></i> Automatic</p>
+              </div>
+              <div class="card-price fw-bold">$40,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+     <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 mb-4">
+          <div class="lets-find-cars card-orange">
+            <div class="col-4">
+              <img src="img/Cars/sedan/sedan1.jpg">
+            </div>
+            <div class="col-8 card-content">
+              <h2>Are you looking for a car?</h2>
+              <p>Save time and effort as you no longer need to visit multiple stores to find the right car.</p>
+              <button>
+                Find cars <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="lets-find-cars card-black">
+            <div class="col-4">
+              <img src="img/Cars/sedan/sedan6.jpg">
+            </div>
+            <div class="col-8 card-content">
+              <h2>Do you want to sell a car?</h2>
+              <p>Find your perfect car match and sell your car quickly with our user-friendly online service.</p>
+              <button>
+                Sell your car <i class="fas fa-car"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer id="footer" class="footer">
+
+      <div class="top-section container">
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <i class="fas fa-trophy"></i>
+                  <p>Top 1 Americas</p>
+                  <p>Largest Auto portal</p>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <i class="fas fa-car"></i>
+                  <p>Car Sold</p>
+                  <p>Every 5 minute</p>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <i class="fas fa-tags"></i>
+                  <p>Offers</p>
+                  <p>Stay updated pay less</p>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <i class="fas fa-balance-scale"></i>
+                  <p>Compare</p>
+                  <p>Decode the right car</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="bottom-section container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h3>About Auto Decar</h3>
+                  <ul>
+                      <li>About us</li>
+                      <li>Careers With Us</li>
+                      <li>Terms & Conditions</li>
+                      <li>Privacy Policy</li>
+                      <li>Corporate Policies</li>
+                      <li>Investors</li>
+                      <li>FAQs</li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h3>Popular used car</h3>
+                  <ul>
+                      <li>Chevrolet</li>
+                      <li>Land Rover</li>
+                      <li>Tesla</li>
+                      <li>Volkswagen</li>
+                      <li>Honda</li>
+                      <li>Hyundai</li>
+                      <li>Mercedes Benz</li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h3>Other</h3>
+                  <ul>
+                      <li>How it work</li>
+                      <li>Terms and Conditions</li>
+                      <li>Privacy Policy</li>
+                      <li>Copyrights</li>
+                      <li>Help center</li>
+                      <li>Car sales trends</li>
+                      <li>Personal loan</li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h3>Newsletter</h3>
+                  <p>Stay on top of the latest car trends, tips, and tricks for selling your car.</p>
+                  <input type="email" class="form-control" placeholder="Your email address">
+                  <button class="mt-2 btn btn-outline-success">Send</button>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="bottom-bar">
+          <p>© 2024 Auto Decar. All rights reserved</p>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/?lang=en&mx=2"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </footer>
+</body>
+
+</html>
